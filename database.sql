@@ -42,6 +42,7 @@ CREATE TABLE reviews (
     overall_rating integer CHECK(overall_rating >= 1 AND overall_rating <= 5),
     peacefulness integer CHECK (peacefulness >= 1 AND peacefulness <= 5),
     additional_comments text
+    like_count integer DEFAULT 0
 );
 
 -- Populate UserTable
